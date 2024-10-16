@@ -39,7 +39,7 @@ function sendRideStatus(userEmail, tripDetails) {
     from: "info@ethereal.email",
     to: userEmail,
     subject: "Atlan Ride Status",
-    text: `Dear ${tripDetails.userdata.username},\n \n Your Ride Order has been successfully placed! \n Driver ${tripDetails.driverdata.drivername} will reach at your location shortly \n\n Regards, \n Team Eber`,
+    text: `Dear ${tripDetails.userdata.username},\n \n Your Ride Order has been successfully placed! \n Driver ${tripDetails.driverdata.drivername} will reach at your location shortly \n\n Regards, \n Team Atlan`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -115,7 +115,7 @@ function sendInvoiceEmail(userEmail, tripDetails) {
       <div class="company-info">
         <h2>Atlan Ride</h2>
         <p>Address: Nana Mava, Cosmoplex Cinema, Rajkot, India</p>
-        <p>Email: technicalsupport@eberride.com</p>
+        <p>Email: technicalsupport@atlanride.com</p>
       </div>
       <div class="client-info">
         <h2>${tripDetails.userdata.username}</h2>
