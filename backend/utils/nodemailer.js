@@ -115,7 +115,7 @@ function sendInvoiceEmail(userEmail, tripDetails) {
       <div class="company-info">
         <h2>Atlan Ride</h2>
         <p>Address: Nana Mava, Cosmoplex Cinema, Rajkot, India</p>
-        <p>Email: technicalsupport@atlanride.com</p>
+        <p>Email: technicalsupport@eberride.com</p>
       </div>
       <div class="client-info">
         <h2>${tripDetails.userdata.username}</h2>
