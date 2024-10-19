@@ -71,13 +71,13 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist/frontend/index.html"));
 });
 
-// app.get("/", async (req, res) => {
-//   res.json({
-//     Message: "Hello Ayush, API is Working Fine!",
-//     "Login Data": `http:localhost:4000/logindata`,
-//     "Vehicle Data": `http:localhost:4000/vehicledata`,
-//   });
-// });
+app.get("/", async (req, res) => {
+  res.json({
+    Message: "Hello Ayush, API is Working Fine!",
+    "Login Data": `http:localhost:4000/logindata`,
+    "Vehicle Data": `http:localhost:4000/vehicledata`,
+  });
+});
 
 initializeSocket(http);
 http.listen(PORT, () => {
